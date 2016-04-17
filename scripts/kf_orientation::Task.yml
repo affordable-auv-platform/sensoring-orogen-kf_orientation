@@ -1,0 +1,11 @@
+--- name:default
+filter_tunning_pitch:
+  data:
+  - 0.08
+  - 0.03
+  - 0.07
+filter_tunning_roll:
+  data:
+  - 0.08
+  - 0.03
+  - 0.07

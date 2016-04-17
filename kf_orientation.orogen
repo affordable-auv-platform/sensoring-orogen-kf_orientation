@@ -1,0 +1,20 @@
+name "kf_orientation"
+
+import_types_from "kf_orientationTypes.hpp"
+
+task_context "Task" do
+    needs_configuration
+
+    property('filter_tunning_pitch', '/base/Vector3d')
+
+    property('filter_tunning_roll', '/base/Vector3d')
+
+    input_port('pressure_bar_cmd', 'double')
+
+    input_port('imu_sensors_cmd', '/base/samples/IMUSensors')
+
+    output_port('orientation_samples', '/base/samples/RigidBodyState')
+
+    port_driven
+end
+
